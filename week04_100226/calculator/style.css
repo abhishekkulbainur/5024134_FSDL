@@ -10,7 +10,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 75%, #00f2fe 100%);
+    background-attachment: fixed;
 }
 
 .calculator {
@@ -35,6 +36,9 @@ h2 {
     border-radius: 8px;
     border: none;
     text-align: right;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: #4facfe;
+    font-weight: bold;
 }
 
 .buttons {
@@ -49,17 +53,25 @@ button {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    background: #333;
+    background: linear-gradient(135deg, #667eea, #764ba2);
     color: white;
     transition: 0.2s;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
 }
 
 button:hover {
-    background: #555;
-    transform: scale(1.05);
+    background: linear-gradient(135deg, #764ba2, #f093fb);
+    transform: scale(1.08);
+    box-shadow: 0 6px 20px rgba(240, 147, 251, 0.6);
 }
 
 .wide {
     grid-column: span 4;
-    background: #e53935;
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+}
+
+.wide:hover {
+    background: linear-gradient(135deg, #f5576c, #f093fb);
+    box-shadow: 0 6px 20px rgba(245, 87, 108, 0.6);
 }
