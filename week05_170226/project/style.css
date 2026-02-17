@@ -1,0 +1,133 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Animated Gradient Background */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #1e3c72, #2a5298, #6a11cb, #2575fc);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+
+/* Background Animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    width: 95%;
+    max-width: 850px;
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Glass Card Effect */
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20px 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Input Styling */
+input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+input:focus {
+    box-shadow: 0 0 10px #00f2fe;
+}
+
+/* Button Styling */
+.btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 12px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 15px;
+}
+
+.register-btn {
+    background: linear-gradient(45deg, #00c853, #69f0ae);
+    color: white;
+}
+
+.register-btn:hover {
+    transform: scale(1.05);
+}
+
+.login-btn {
+    background: linear-gradient(45deg, #2979ff, #00b0ff);
+    color: white;
+}
+
+.login-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .card {
+        padding: 20px;
+    }
+}
+.hidden {
+    display: none;
+}
+
+.switch-text {
+    margin-top: 15px;
+    color: white;
+    font-size: 14px;
+}
+
+.switch-text span {
+    color: #00f2fe;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.switch-text span:hover {
+    text-decoration: underline;
+}

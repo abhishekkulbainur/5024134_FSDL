@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Student Management System</h1>
+
+    <!-- LOGIN CARD -->
+    <div class="card" id="loginCard">
+
+        <h2>Login</h2>
+
+        <input type="email" id="loginEmail" placeholder="Enter Email">
+        <input type="password" id="loginPassword" placeholder="Enter Password">
+
+        <button class="btn login-btn" onclick="loginUser()">Login</button>
+
+        <p class="switch-text">
+            New User?
+            <span onclick="showRegister()">Register Here</span>
+        </p>
+
+    </div>
+
+
+    <!-- REGISTER CARD -->
+    <div class="card hidden" id="registerCard">
+
+        <h2>Registration</h2>
+
+        <input type="text" id="regName" placeholder="Enter Name">
+        <input type="email" id="regEmail" placeholder="Enter Email">
+        <input type="password" id="regPassword" placeholder="Enter Password">
+        <input type="password" id="regConfirmPassword" placeholder="Confirm Password">
+
+        <button class="btn register-btn" onclick="registerUser()">Register</button>
+
+        <p class="switch-text">
+            Already have account?
+            <span onclick="showLogin()">Login Here</span>
+        </p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
